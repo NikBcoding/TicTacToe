@@ -21,7 +21,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: green;
+    background-color: teal;
   }
 
   div {
@@ -60,5 +60,5 @@
   }
 
   button:hover {
-    background-color: red;
+    background-color: darkseagreen;
   }

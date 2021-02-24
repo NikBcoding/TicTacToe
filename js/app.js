@@ -41,7 +41,7 @@ const squares = document.querySelectorAll('div')
  -----*/
 resetEl.addEventListener('click', init)
 
- boxContainer.addEventListener('click', handleClick)
+boxContainer.addEventListener('click', handleClick)
 
 
 init();
@@ -56,9 +56,9 @@ function handleClick(evt) {
     console.log(turn)
     if(turn === 1) {
         
-        evt.target.textContent = 'J'
+        evt.target.textContent = 'X'
     } else {
-        evt.target.textContent = 'S'
+        evt.target.textContent = 'O'
     }
     evt.target.className = 'disable'
     checkWinner();
@@ -74,16 +74,17 @@ function checkWinner() {
             }
         if (counter === 3 || counter === -3) {
             if (counter === 3) {
-            messageEl.textContent = "JAVA wins!!!"
-            boxContainer.removeEventListener('click', handleClick)
+                messageEl.textContent = "X wins!!!"
+                boxContainer.removeEventListener('click', handleClick)
             } else if (counter === -3) {
-                messageEl.textContent = "SCRIPT wins!!!"
+                messageEl.textContent = "O wins!!!"
                 boxContainer.removeEventListener('click', handleClick)
             }
             return;
         } else if (!board.includes(0)) {
             messageEl.textContent = "Draw"
-            return;
         }
     }
-}    
+}
+
+

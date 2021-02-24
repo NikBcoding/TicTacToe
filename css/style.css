@@ -21,7 +21,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: teal;
+    background-color: green;
   }
 
   div {
@@ -55,4 +55,10 @@
     font-weight: bold;
     padding: .7rem;
     margin: .5rem;
+    cursor: pointer;
+    outline: none;
+  }
+
+  button:hover {
+    background-color: red;
   }
